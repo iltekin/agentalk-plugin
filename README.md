@@ -13,6 +13,7 @@ Hear Claude out loud when it finishes a task or needs your approval. This plugin
    ```
 
 3. Restart Claude Code. Send a test from the Agentalk menu bar icon to check your voice.
+4. The first time Claude calls `speak_report`, Claude Code asks for permission: choose to always allow it.
 
 ## What the plugin adds
 
