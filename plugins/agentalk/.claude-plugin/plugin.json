@@ -1,7 +1,7 @@
 {
   "name": "agentalk",
   "displayName": "Agentalk",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Spoken reports: Claude tells you out loud when it finishes a task or needs your approval. Requires the Agentalk app for macOS, which speaks the reports on your Mac.",
   "author": {
     "name": "Sezer Iltekin"

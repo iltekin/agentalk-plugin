@@ -22,7 +22,7 @@ The only connections Agentalk makes to the internet are the voice and language p
 
 ## The Claude Code plugin
 
-The plugin only configures Claude Code to send its hook events to Agentalk on `127.0.0.1:1989` and to offer the `speak_report` tool. It contains no code that runs outside Claude Code and sends nothing to the internet.
+The plugin only configures Claude Code to send its hook events to Agentalk on `127.0.0.1:2026` and to offer the `speak_report` tool. It contains no code that runs outside Claude Code and sends nothing to the internet.
 
 ## Contact
 

@@ -11,9 +11,11 @@ Before you end your turn, call the `speak_report` tool from the `agentalk` MCP s
 - `status: "needs_input"` when you stop to ask a question or need approval.
 - `status: "failed"` when you are blocked by an error you cannot resolve.
 
-Write `summary` as one to three short sentences meant to be heard, not read:
+Write `summary` as one to three short sentences meant to be heard, not read, the most important first.
+Agentalk speaks only as many as the developer's length setting allows (one sentence by default), so the
+first sentence must stand on its own:
 
-- Say what you did and what the developer should do next, if anything.
+- Say what you did, then what the developer should do next, if anything.
 - Use the language the developer writes to you in, and pass it as `language` (for example `en` or `tr`).
 - Never include code, file paths, URLs, commands, version hashes, Markdown, lists or emoji.
 - Prefer plain words over identifiers: "the login form" rather than `LoginForm.tsx`.

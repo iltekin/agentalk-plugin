@@ -17,20 +17,20 @@ Hear Claude out loud when it finishes a task or needs your approval. This plugin
 
 ## What the plugin adds
 
-- **Hooks** (`hooks/hooks.json`): `Stop`, `SubagentStop` and permission `Notification` events go to Agentalk at `http://127.0.0.1:1989/hook/claude`. If Agentalk is not running, the hooks fail silently and Claude carries on.
-- **MCP server** (`.mcp.json`): the `speak_report` tool at `http://127.0.0.1:1989/mcp`, so Claude can write its own spoken summary.
+- **Hooks** (`hooks/hooks.json`): `Stop`, `SubagentStop` and permission `Notification` events go to Agentalk at `http://127.0.0.1:2026/hook/claude`. If Agentalk is not running, the hooks fail silently and Claude carries on.
+- **MCP server** (`.mcp.json`): the `speak_report` tool at `http://127.0.0.1:2026/mcp`, so Claude can write its own spoken summary.
 - **Skill** (`skills/spoken-reports`): tells Claude to call `speak_report` once at the end of a task, before waiting for your approval, or when blocked, in one to three plain sentences without code.
 
 When Claude reports through the tool, Agentalk silences the Stop hook of the same turn, so you never hear a turn twice.
 
-The plugin uses port 1989. If you change the port in Agentalk, use the manual setup shown in Agentalk, Settings, Connections.
+The plugin uses port 2026. If you change the port in Agentalk, use the manual setup shown in Agentalk, Settings, Connections.
 
 ## Other agents
 
 Codex, Cursor and Gemini CLI connect with a hook snippet you copy from Agentalk, Settings, Connections. Any script can send a report:
 
 ```bash
-curl -X POST http://127.0.0.1:1989/speak -H 'Content-Type: application/json' \
+curl -X POST http://127.0.0.1:2026/speak -H 'Content-Type: application/json' \
   -d '{"agent": "My script", "project": "my-app", "text": "The deploy finished."}'
 ```
 

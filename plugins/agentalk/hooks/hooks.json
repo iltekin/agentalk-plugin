@@ -3,14 +3,14 @@
     "Stop": [
       {
         "hooks": [
-          { "type": "http", "url": "http://127.0.0.1:1989/hook/claude", "timeout": 5 }
+          { "type": "http", "url": "http://127.0.0.1:2026/hook/claude", "timeout": 5 }
         ]
       }
     ],
     "SubagentStop": [
       {
         "hooks": [
-          { "type": "http", "url": "http://127.0.0.1:1989/hook/claude", "timeout": 5 }
+          { "type": "http", "url": "http://127.0.0.1:2026/hook/claude", "timeout": 5 }
         ]
       }
     ],
@@ -18,7 +18,7 @@
       {
         "matcher": "permission_prompt|elicitation_dialog",
         "hooks": [
-          { "type": "http", "url": "http://127.0.0.1:1989/hook/claude", "timeout": 5 }
+          { "type": "http", "url": "http://127.0.0.1:2026/hook/claude", "timeout": 5 }
         ]
       }
     ]
