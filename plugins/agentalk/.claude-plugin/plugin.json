@@ -1,0 +1,13 @@
+{
+  "name": "agentalk",
+  "displayName": "Agentalk",
+  "version": "1.0.0",
+  "description": "Spoken reports: Claude tells you out loud when it finishes a task or needs your approval. Requires the Agentalk app for macOS, which speaks the reports on your Mac.",
+  "author": {
+    "name": "Sezer Iltekin"
+  },
+  "homepage": "https://github.com/iltekin/agentalk-plugin",
+  "repository": "https://github.com/iltekin/agentalk-plugin",
+  "license": "MIT",
+  "keywords": ["voice", "tts", "notifications", "macos", "reports"]
+}

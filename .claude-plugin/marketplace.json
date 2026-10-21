@@ -1,0 +1,14 @@
+{
+  "name": "agentalk",
+  "description": "Spoken reports from Claude Code, read aloud by the Agentalk Mac app",
+  "owner": {
+    "name": "Sezer Iltekin"
+  },
+  "plugins": [
+    {
+      "name": "agentalk",
+      "source": "./plugins/agentalk",
+      "description": "Hear a short spoken summary when Claude finishes a task or needs your approval. Requires the Agentalk app for macOS."
+    }
+  ]
+}
