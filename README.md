@@ -23,7 +23,7 @@ Hear Claude out loud when it finishes a task or needs your approval. This plugin
 
 When Claude reports through the tool, Agentalk silences the Stop hook of the same turn, so you never hear a turn twice.
 
-The plugin uses port 2026. If you change the port in Agentalk, use the manual setup shown in Agentalk, Settings, Connections.
+Agentalk always listens on port 2026, the port the plugin uses.
 
 ## Other agents
 
