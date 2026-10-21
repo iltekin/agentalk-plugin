@@ -17,11 +17,12 @@ Hear Claude out loud when it finishes a task or needs your approval. This plugin
 
 ## What the plugin adds
 
+- **Session start hook:** when a session starts, resumes, is cleared or compacted, Agentalk answers with short instructions that Claude Code adds to Claude's context: call `speak_report` at the end of every turn, in your chosen language and length (Agentalk, Settings, General). This keeps Claude writing the spoken summary itself.
 - **Hooks** (`hooks/hooks.json`): `Stop`, `SubagentStop` and permission `Notification` events go to Agentalk at `http://127.0.0.1:2026/hook/claude`. If Agentalk is not running, the hooks fail silently and Claude carries on.
 - **MCP server** (`.mcp.json`): the `speak_report` tool at `http://127.0.0.1:2026/mcp`, so Claude can write its own spoken summary.
 - **Skill** (`skills/spoken-reports`): tells Claude to call `speak_report` once at the end of a task, before waiting for your approval, or when blocked, in one to three plain sentences without code.
 
-When Claude reports through the tool, Agentalk silences the Stop hook of the same turn, so you never hear a turn twice.
+When Claude reports through the tool, Agentalk silences the Stop hook of the same turn, so you never hear a turn twice. If Claude forgets the tool, the Stop hook still delivers its final message and Agentalk summarizes it on your Mac (Apple Intelligence).
 
 Agentalk always listens on port 2026, the port the plugin uses.
 
